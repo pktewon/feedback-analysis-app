@@ -1,10 +1,8 @@
---index-strategy unsafe-best-match
---extra-index-url https://download.pytorch.org/whl/cpu
-
 streamlit==1.37.1
 pandas==2.2.2
 scikit-learn==1.5.1
 vaderSentiment==3.3.2
 transformers==4.43.3
 accelerate>=0.33.0
-torch
+# PyTorch CPU 버전을 wheel 파일 URL로 직접 지정 (Python 3.13용)
+https://download.pytorch.org/whl/cpu/torch-2.4.0%2Bcpu-cp313-cp313-manylinux2014_x86_64.whl
